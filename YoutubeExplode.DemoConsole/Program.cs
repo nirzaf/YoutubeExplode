@@ -29,7 +29,7 @@ public static class Program
             // Available streams vary depending on the video and it's possible
             // there may not be any muxed streams at all.
             // See the readme to learn how to handle adaptive streams.
-            Console.Error.WriteLine("This video has no muxed streams.");
+            await Console.Error.WriteLineAsync("This video has no muxed streams.");
             return;
         }
 
